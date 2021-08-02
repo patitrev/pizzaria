@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Pizzeria Treviso</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Patrícia Trevisan">
+        <meta name="description" content="Melhor pizza da cidade.">
+        <meta name="keywords" content="pizza, delivey, comida">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="../CSS/estilos.css">    </head>
+    </head>
+
+    <body>
+        <header>
+            <h1>Pizzeria Treviso</h1>
+            <p>A melhor pizza italiana fora da Itália!</p>
+            <span id="showMenu" onclick="showMenu()">&equiv; Menu</span>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="pedido.html">Faça seu pedido</a></li>
+                <li><a href="cliente.html">Área do cliente</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <h2>Preços</h2>
+            <hr>
+            <p>Opções:</p>
+            <table>
+                <tr>
+                    <th>Tamanho</th>
+                    <th>Quantidade de Sabores</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Pequena</td>
+                    <td>1</td>
+                    <td>29,99</td>
+                </tr>
+                <tr>
+                    <td>Média</td>
+                    <td>2</td>
+                    <td>39,99</td>
+                </tr>
+                <tr>
+                    <td>Grande</td>
+                    <td>3</td>
+                    <td>54,99</td>
+                </tr>
+
+            </table>
+        </main>
+        <aside>
+            <h4>Promoção da semana</h4>
+        </aside>
+        <footer>
+            <div id="chat">
+                <div id="texto">Clique aqui para falar com os atendentes</div>
+                <div id="botoes">
+                    <span id="minChat" class="btChat" onclick="minChat()">&or;</span>
+                    <span id="maxChat" class="btChat" onclick="maxChat()">&and;</span>
+                    <span id="closeChat" class="btChat" onclick="closeChat()">x</span>
+                </div>
+            </div>
+            <p>Pizzeria Treviso</p>
+            <p>
+                Peça pelo telefone (49)00000-0000
+            </p>
+            <ul>
+                <li><a href="https://www.facebook.com/pizzeriatreviso/"><img src="../imagens/facebook.png" alt="Facebook"></a>
+                </li>
+                <li><a href="https://www.twitter.com/pizzeriatreviso/"><img src="../imagens/twitter.png" alt="Twitter"></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+    <script src="../JS/funcoes.js"></script>
+</html>

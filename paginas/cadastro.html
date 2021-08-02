@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <head>
+        <title>Pizzeria Treviso</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Patrícia Trevisan">
+        <meta name="description" content="Melhor pizza da cidade.">
+        <meta name="keywords" content="pizza, delivey, comida">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="../CSS/estilos.css">    </head>
+
+    <body>
+        <header>
+            <h1>Pizzeria Treviso</h1>
+            <p>A melhor pizza italiana fora da Itália!</p>
+            <span id="showMenu" onclick="showMenu()">&equiv; Menu</span>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="pedido.html">Faça seu pedido</a></li>
+                <li><a href="cliente.html">Área do cliente</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <h2>Cadastro</h2>
+            <hr>
+            <fieldset>
+                <legend>Insira seus Dados</legend>
+                <form method="POST">
+                    <div>
+                         <label>
+                             Nome: 
+                             <input type="text" name="first_name" size="35" maxlength="35" placeholder="Digite seu nome!" required>
+                         </label>
+                    </div>
+                    <div>
+                         <label>
+                             Sobrenome: 
+                             <input type="text" name="last_name" size="35" maxlength="35" placeholder="Digite seu sobrenome!" required>
+                         </label>
+                     </div>
+                     <div>
+                        <label>
+                            Data de nascimento: 
+                            <input type="date" name="birth_date">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Endereço: 
+                            <input type="text" name="address" size="50" placeholder="Rua, número, complemento" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Bairro:
+                            <select>
+                                <option>Escolha seu bairro</option>
+                                <option>Centro</option>
+                                <option>Jardim Itália</option>
+                                <option>Palmital</option>
+                                <option>Saic</option>
+                                <option>Santa Maria</option>
+                                <option>Santo Antônio</option>
+                                <option>Universitário</option>
+                            </select>    
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            E-mail: 
+                            <input type="email" name="email" size="50" maxlength="50" placeholder="Digite o seu endereço de e-mail!" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Telefone: 
+                            <input type="tel" name="phone" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Senha: 
+                            <input type="password" name="password" size="25" minlength="8" maxlength="15" placeholder="entre 8 e 15 caracteres"required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Confirme sua senha: 
+                            <input type="password" name="password_confirmation" size="25" minlength="8" maxlength="15" required>
+                        </label>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Como você conheceu nossa empresa?</legend>
+                            <label><input type="radio" name="how_know" value="0">Loja física &nbsp &nbsp</label>
+                            <label><input type="radio" name="how_know" value="1">Marketing Digital &nbsp &nbsp</label>
+                            <label><input type="radio" name="how_know" value="2">Publicidade no rádio &nbsp &nbsp</label>
+                            <label><input type="radio" name="how_know" value="3">Indicação de amigos</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="sale">Quero receber promoções da Pizzaria Treviso por e-mail</label>
+                        <br>
+                        <label><input type="checkbox" name="sale1">Quero receber promoções da empresas parceiras por e-mail</label>
+                    </div>
+
+                     <div>
+                         <input type="submit" value="Submeter">
+                     </div>
+                </form>
+            </fieldset>
+        </main>
+        <aside>
+            <h4>Promoção da semana</h4>
+        </aside>
+        <footer>
+            <div id="chat">
+                <div id="texto">Clique aqui para falar com os atendentes</div>
+                <div id="botoes">
+                    <span id="minChat" class="btChat" onclick="minChat()">&or;</span>
+                    <span id="maxChat" class="btChat" onclick="maxChat()">&and;</span>
+                    <span id="closeChat" class="btChat" onclick="closeChat()">x</span>
+                </div>
+            </div>
+            <p>Pizzeria Treviso</p>
+            <p>
+                Peça pelo telefone (00)00000-0000
+            </p>
+            <ul>
+                <li><a href="https://www.facebook.com/pizzeriatreviso/"><img src="../imagens/facebook.png" alt="Facebook"></a>
+                </li>
+                <li><a href="https://www.twitter.com/pizzeriatreviso/"><img src="../imagens/twitter.png" alt="Twitter"></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+    <script src="../JS/funcoes.js"></script>
+</html>
