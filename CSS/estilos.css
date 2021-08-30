@@ -1,0 +1,282 @@
+body {
+	font-family: arial, sans-serif, monospace;
+	font-size: 1.4em; 
+	margin: 0;
+}
+
+header{
+	background-color: #d42222;
+}
+
+
+aside{
+    color: white;
+    background-color: #46AE8F;
+}
+
+header, footer, nav, aside, main {
+	padding: 10px;  
+}
+
+h1 {
+	color:green;
+    text-shadow:4px 4px 2px #02352133;
+}
+
+h2 {
+	color: #b10808;
+}
+
+header{
+	position: relative; 
+}
+header p {
+	color:white;
+	font-weight: bold;
+	font-style: italic;
+	font-family: serif;
+	text-transform: capitalize;
+	letter-spacing: 4px;
+	word-spacing: 8px;
+	direction: ltr; 
+}
+
+hr {
+    color: red;
+}
+
+main p {
+	line-height: 1.6; 
+}
+
+a {
+	text-decoration: none; 
+}
+
+a:link{
+	
+	color: rgb(60, 189, 60);
+}
+
+a:visited{
+	
+	color: green;
+}
+
+
+a:hover{
+	text-shadow: 3px 3px 5px rgb(136, 133, 133); 
+}
+
+
+nav ul li {
+	list-style-type: none;
+	padding: 5px;
+}
+
+nav  {
+	display: none;
+}
+
+#showMenu{
+	color: white;
+	border: 1px solid white;
+	padding: 5px;
+}
+   
+
+#chat{
+	display: none;
+}
+
+table, th, td{
+	border: 3px solid green;
+	border-collapse: collapse;
+    padding: 10px; 
+}
+
+th{
+	background-color:green;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: white;
+}
+
+tr:nth-child(odd){
+	background-color:red;
+}
+
+#pizza{
+	width: 70%;
+	max-width: 600px;
+} 
+
+#imgPizza{
+	text-align: left;
+} 
+
+
+#cozinha{
+    width: 80%;
+    max-width: 400px;
+}
+#imgCozinha{
+    text-align: left;
+
+}
+
+
+.clear{
+	clear: both;
+}
+
+* { 
+	box-sizing: border-box;
+} 
+
+
+input[type=text], input[type=email], input[type=password], input[type=tel],
+input[type=date],textarea, select {
+	background-color:rgb(245, 238, 242);
+
+}
+
+footer ul li {
+	display: inline;
+}
+
+footer ul{
+	padding: 0;
+}
+
+footer{
+    background-color:green;
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.sabor{
+	width: 400px;
+	min-height: 100px;
+	padding: 5px;
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	margin: 5px;
+	transition: 0.5s;
+}
+
+.sabor:hover{
+	box-shadow: 3px 3px 10px #be0f09;
+	transition: 0.5s;
+}
+
+.sabor img{
+	width: 80px;
+	border-radius: 40px;
+	margin: 0 20px 0 20px;
+}
+
+.sabor label{
+	display: flex;
+	align-items: center;
+}
+
+.sabor_descricao{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#lista_sabores{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+} 
+
+#opcoes_pedido{
+	display: none;
+}
+
+@media only screen and (min-width: 700px){
+	main{
+		width: 85%;
+	}
+
+	aside{
+		width: 15%;
+		height: 400px;
+		margin-top: 20px;		
+	}
+
+	main, aside{
+		float: left;
+	} 
+	
+	footer{
+		clear: left;
+	} 
+	#cozinha{
+		float: right; 
+		display: inline;
+	} 	
+	
+	#chat{
+		display: flex; 
+		color: black;
+		background-color: rgb(116, 187, 94);
+		width: 300px;
+		height: 150px;
+		position:fixed;
+		bottom: 0;
+		right: 50px;	
+		align-items: flex-start;	
+		justify-content: space-between;
+	}
+
+	#chat .btChat{
+		background-color: #41753a;
+		border: 1px solid black;
+		padding: 2px 5px;
+		margin: 2px;
+		cursor: pointer;
+	}
+
+	#chat #botoes{
+		display: flex;
+	}
+
+	nav ul li {
+		display: inline;
+		margin: 0 20px 0 0; 
+	}
+	
+	nav {
+		display: block;
+	}
+
+	#showMenu {
+		display: none;
+	}
+	header p {
+		position: absolute;
+		right: 10px;
+		bottom: 0px;
+	}	
+
+	#imgPizza h3{
+		float: left;
+		position: relative;
+		top: 50px;
+		left: 50px;
+	} 	
+
+	#pizza{
+		max-width: 800px;
+	}
+}
